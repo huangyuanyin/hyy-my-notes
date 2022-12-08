@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { getDirname, path } from "@vuepress/utils";
 import theme from "./theme.js";
 
@@ -13,8 +14,8 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "小佟の学习笔记",
-      description: "小佟の学习笔记",
+      title: "白Tの学习笔记",
+      description: "白Tの学习笔记",
       // 设置favicon
       head: [["link", { rel: "icon", href: "/favicon.svg" }]],
     },
@@ -22,6 +23,10 @@ export default defineUserConfig({
   // 主题设置
   theme,
   plugins: [
+    // 注册全局组件的插件
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
+    }),
     // 搜索插件
     searchPlugin({
       //多语言支持
