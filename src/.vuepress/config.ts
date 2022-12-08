@@ -1,18 +1,43 @@
 import { defineUserConfig } from "vuepress";
+import { searchPlugin } from "@vuepress/plugin-search";
+import { getDirname, path } from "@vuepress/utils";
 import theme from "./theme.js";
 
-export default defineUserConfig({
-  base: "/",
+const __dirname = getDirname(import.meta.url);
 
+//自定义用户配置
+export default defineUserConfig({
+  base: "/mynotes/",
+
+  // 多语言设置
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
+      title: "小佟の学习笔记",
+      description: "小佟の学习笔记",
+      // 设置favicon
+      head: [["link", { rel: "icon", href: "/favicon.svg" }]],
     },
   },
-
+  // 主题设置
   theme,
+  plugins: [
+    // 搜索插件
+    searchPlugin({
+      //多语言支持
+      locales: {
+        "/": {
+          placeholder: "搜索本站",
+        },
+      },
+      // 热键支持
+      hotKeys: ["command", "k"],
+      // 最大推荐个数
+      maxSuggestions: 7,
+      // 排除首页
+      isSearchable: (page) => page.path !== "/",
+    }),
+  ],
 
   shouldPrefetch: false,
 });
