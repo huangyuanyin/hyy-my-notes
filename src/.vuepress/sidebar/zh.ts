@@ -126,6 +126,19 @@ export const zhSidebar = sidebar({
       prefix: "/codenotes/cookbook/",
       children: [""],
     },
+    {
+      text: "Vue3",
+      icon: "vue",
+      collapsible: true,
+      prefix: "/codenotes/Vue3/",
+      children: [
+        {
+          text: "找不到模块“xxx.vue”或其相应的类型声明问题解决",
+          icon: "write",
+          link: "找不到模块“xxx.vue”或其相应的类型声明问题解决.md",
+        },
+      ],
+    },
   ],
 
   // 浮生杂记的侧边栏
