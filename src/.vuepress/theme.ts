@@ -11,8 +11,8 @@ export default hopeTheme({
 
   // 文章显示的默认作者
   author: {
-    name: "Mr.Tong",
-    url: "https://gitee.com/oucystong",
+    name: "黄原寅",
+    url: "https://github.com/huangyuanyin",
   },
 
   // 使用官方提供的图标库-也可以构建自己的图标库
@@ -22,10 +22,10 @@ export default hopeTheme({
   logo: "/site_logo.png",
 
   // 导航栏上的个人仓库地址
-  repo: "https://gitee.com/oucystong",
+  repo: "https://github.com/huangyuanyin",
 
   // 自定义仓库链接文字-默认从repo中自动推断为"GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
-  repoLabel: "Gitee",
+  repoLabel: "GitHub",
 
   // 是否在导航栏内显示仓库链接-默认为true
   repoDisplay: true,
@@ -54,7 +54,7 @@ export default hopeTheme({
     orange: "#FF8C3D",
   },
   // 暗黑模式切换-在深色模式和浅色模式中切换
-  darkmode: "toggle",
+  darkmode: "enable",
   // 全屏按钮
   fullscreen: true,
   // 返回顶部按钮-下滑300px后显示
@@ -87,15 +87,15 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       // 全局设置页脚信息
-      footer: "小佟の学习笔记",
+      footer: "白Tの学习笔记",
 
       // 显示页脚
       displayFooter: false,
 
       // 页面配置信息
-      metaLocales: {
-        editLink: "在【Gitee】上编辑此页",
-      },
+      // metaLocales: {
+      //   editLink: "在【Gitee】上编辑此页",
+      // },
     },
   },
   // 博客配置
@@ -103,20 +103,20 @@ export default hopeTheme({
     // 头像
     avatar: "/blog_head_logo.gif",
     // 名称
-    name: "Mr.Tong",
+    name: "黄原寅",
     // 是否是圆形头像
     roundAvatar: false,
     // 个人描述
     description: "你是无意穿堂风 偏偏孤倨引山洪",
     // 社交媒体
     medias: {
-      Gitee: "https://gitee.com/oucystong",
+      GitHub: "https://github.com/huangyuanyin",
     },
     // 博客的侧边栏设置
     sidebarDisplay: "mobile",
     // 每页展示的文章数量
     articlePerPage: 7,
-    timeline: "小佟の时光轴🍃",
+    timeline: "白Tの时光轴🍃",
   },
   plugins: {
     // 在MD文件中启用的组件
@@ -187,7 +187,7 @@ export default hopeTheme({
       autoExcerpt: true,
     },
     // 开启git实现编辑此页面-最后更新时间-贡献者功能
-    git: true,
+    git: false,
     // 关闭sitemap插件
     sitemap: false,
   },
