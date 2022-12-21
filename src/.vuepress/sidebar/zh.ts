@@ -133,6 +133,11 @@ export const zhSidebar = sidebar({
       prefix: "/codenotes/Vue3/",
       children: [
         {
+          text: "使用vite开发组件并发布到npm",
+          icon: "write",
+          link: "使用vite开发组件并发布到npm.md",
+        },
+        {
           text: "找不到模块“xxx.vue”或其相应的类型声明问题解决",
           icon: "write",
           link: "找不到模块“xxx.vue”或其相应的类型声明问题解决.md",
